@@ -13,13 +13,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
 </head>
 <body>
     <header>
-        <h1 id="home">Cloths Up</h1>
-
-        <p>Temukan Kebutuhan Fashion Anda di Cloths Ups</p>
-
+        <div class="jumbroton">
+            <h1 id="home">Cloths Up</h1>
+            <p>Temukan Kebutuhan Fashion Anda di Cloths Up</p>
+        </div>
         <nav>
             <ul>
                 <li>
@@ -43,20 +53,26 @@
 
     <main>
 
-        <div>
-            <article id="about">
+        <div id="content">
+            <article id="about" class="card">
                 <h2 id="about">About</h2>
-                <img src="asset/sejarah-img.webp" alt="About">
+                <img src="asset/sejarah-img.webp" alt="About" class="featured-image">
                 <p>
                     Kami adalah sebuah perusahaan yang berkomitmen untuk memberikan pengalaman berbelanja yang menyenangkan dan memuaskan kepada pelanggan kami. 
                     Sejak didirikan pada tahun 2024, kami telah menjadi tujuan utama bagi mereka yang mencari pakaian berkualitas dan gaya terkini.
+                    Kami hanya menyediakan produk-produk berkualitas tinggi yang telah melalui proses seleksi ketat, 
+                    sehingga pelanggan kami dapat merasa yakin dengan setiap pembelian yang mereka buat.
+                    Kami terus mengembangkan dan memperbarui layanan kami untuk tetap relevan dalam industri yang terus berubah. 
+                    Dari teknologi kasir hingga program loyalitas, 
+                    kami selalu mencari cara untuk meningkatkan pengalaman pelanggan kami.
+                    
                 </p>
             </article>
             
-            <article id="shop">
+            <article id="shop" class="card">
                 <h2 id="shop">Shop</h2>
-                <img src="asset/katalog1-img.webp" alt="katalog">
-                <p>UT Moma Art Icons Lengan Pendek</p>
+                <img src="asset/katalog1-img.webp" alt="katalog" class="featured-image">
+                <p>Produk Unggulan Kami UT Moma Art Icons Lengan Pendek</p>
                 <p>
                     UT Moma Art Icons Lengan Pendek" adalah kaos dengan desain grafis yang diinspirasi oleh karya seni ikonik dari Museum of Modern Art (MoMA). 
                     Kaos ini menampilkan cetakan lengan pendek dengan berbagai karya seni terkenal dari MoMA, menciptakan kombinasi unik antara mode dan seni. 
@@ -64,9 +80,9 @@
                 </p>
             </article>
 
-            <article id="store">
+            <article id="store" class="card">
                 <h2 id="store">Store</h2>
-                <img src="asset/store.jpeg" alt="store">
+                <img src="asset/store.jpeg" alt="store" class="featured-image">
                 <p>
                     Terletak di pusat perbelanjaan terkenal di pusat kota, 
                     Fashion Avenue menawarkan pengalaman berbelanja yang tak tertandingi untuk para penggemar mode. 
@@ -81,35 +97,53 @@
         </div>
 
         <aside>
-            <article>
+            <article class="profile card">
                 <header>
-                    <h2 id="contacts">Contacts</h2>
-                    <p>Tentang Saya</p>
+                    <h2 id="contacts">About Me</h2>
                     <figure>
                         <img src="asset/profile.jpg" alt="tentang saya">
-                        <figcaption>Tentang saya</figcaption>
                     </figure>
                 </header>
 
-                <section>
+                <section class="aboutme">
                     <h3>Data Diri</h3>
 
                     <table>
                         <tr>
-                            <th>Nama</th>
+                            <th>Nama </th>
                             <td>Muhadzdzib Dzaky Zaidan</td>
                         </tr>
                         <tr>
-                            <th>Pekerjaan</th>
+                            <th>Pekerjaan </th>
                             <td>Mahasiswa</td>
                         </tr>
                         <tr>
-                            <th>Email</th>
-                            <td>muhadzdzakyzaidan@gmail.com</td>
+                            <th>Umur </th>
+                            <td>21 tahun</td>
                         </tr>
                     </table>
+
+                    <h4> - Social Media - </h4>
+                    <div class="social-media">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/Dzakk1"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://id.linkedin.com/in/muhadzdzib-dzaky-zaidan"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/dzaky.zaa/"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/dzaky.zaid/?locale=id_ID"><i class="fab fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </section>
             </article>
+
         </aside>
     </main>
     

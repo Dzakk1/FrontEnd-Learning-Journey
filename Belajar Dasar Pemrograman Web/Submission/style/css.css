@@ -1,4 +1,4 @@
-*, *::before, *::after {
+* {
     box-sizing: border-box;
 }
 
@@ -6,19 +6,157 @@ body {
     font-family: 'Inter', sans-serif;
     height: 100vh;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+    /* display: flex;
+    flex-direction: column; */
 }
 
-header.navbar-container {
-    display: flex;
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #776b5d;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
     width: 100%;
-    max-width: 1200px;
-    padding-block: 1rem;
-    margin-inline: auto;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 9999;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
 }
 
-header.navbar-container navbar-menu
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.jumbroton {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #776b5d;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #4d453c;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
+
+.aboutme h3 {
+    text-align: center;
+}
+
+.aboutme th {
+    text-align: left;
+}
+
+.aboutme h4 {
+    text-align: center;
+    color: #3a3b3c;
+}
+
+
+
+.social-media ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex; 
+    justify-content: center; 
+}
+
+.social-media ul li {
+    margin: 0 5px; 
+}
+
+.social-media ul li a {
+    color: #2c2722;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* .aboutme td {
+    padding-right: 200px;
+} */
+
+
